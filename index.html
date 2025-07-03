@@ -35,7 +35,73 @@
     <q>Quotations</q>
     <abbr title="Water">H <sub>2</sub>O</abbr>
     <!--Comments-->
-    <Link>Hello</Link>
     
+    <!--Links in HTML-->
+    <a href="semantics.html">Semantics</a>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.google.com" rel="noopener noreferrer">Google</a>
+    
+    <h1>images in Html</h1>
+
+    <img src="" alt="">
+
+    <h4>Table in Html</h4>
+
+    <table border="2px">
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+                <td>data3</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Rowspan and colspan in HTML</h3>
+    <table border="2px">
+        <caption>Table Caption</caption>
+        <thead>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" align="center">data1</td>
+                
+                <td rowspan="2">data3</td>
+            </tr>
+            <tr>
+                <td>data1</td>
+                <td>data2</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <Hr></Hr>
+
+    <h1>Form in Html</h1>
+    <label for="firstname"></label>
+    <input type="text" name="Ashish" id="firstname">firstname <br>
+    <label for="lastname"></label>
+    <input type="text" name="Sharma" id="lastname">lastname <br>
+    <label for="passname"></label>
+    <input type="password" name="password" id="passname"> password <br>
+    <label for="ename"></label>
+    <input type="email" name="email" id="ename">email
 </body>
 </html>
