@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!-- DOCTYPE declaration tells the browser this is HTML5 -->
+<html lang="en">
+<!-- html is the root element, lang attribute specifies language -->
+
+<head>
+    <!-- HEAD section contains metadata not visible on the page -->
+    <meta charset="UTF-8">
+    <!-- Character encoding for proper text display -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport meta tag makes the page responsive on mobile devices -->
+    
+    <meta name="description" content="Complete HTML tutorial with all important tags">
+    <!-- Description that appears in search engine results -->
+    
+    <meta name="keywords" content="HTML, tutorial, web development, tags">
+    <!-- Keywords for SEO (less important now) -->
+    
+    <meta name="author" content="HTML Tutorial">
+    <!-- Author information -->
+    
+    <title>All Important Tags</title>
+    <!-- Title appears in browser tab and search results -->
+    
+    <style>
+        /* Internal CSS - styles within the HTML document */
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        .highlight { background-color: #ffeb3b; padding: 2px 4px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .form-group { margin: 10px 0; }
+        input, textarea, select { padding: 5px; margin: 5px; }
+    </style>
+</head>
+
+<body>
+    <!-- BODY contains all visible content -->
+    
+    <div class="container">
+        <!-- DIV is a generic container for grouping elements -->
+        
+        <header>
+            <!-- HEADER represents introductory content -->
+            <h1>Complete HTML Tutorial</h1>
+            <!-- H1-H6 are heading tags, H1 is the largest -->
+            <nav>
+                <!-- NAV contains navigation links -->
+                <ul>
+                    <!-- UL creates unordered (bulleted) lists -->
+                    <li><a href="#text-formatting">Text Formatting</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#links-images">Links & Images</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#forms">Forms</a></li>
+                    <li><a href="#semantic">Semantic Elements</a></li>
+                    <!-- LI are list items, A creates hyperlinks -->
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- MAIN contains the primary content -->
+            
+            <section id="text-formatting">
+                <!-- SECTION groups related content together -->
+                <h2>Text Formatting Tags</h2>
+                
+                <p>This is a <strong>paragraph</strong> with various formatting options.</p>
+                <!-- P creates paragraphs, STRONG makes text bold and important -->
+                
+                <p>Here's <em>emphasized text</em> and <b>bold text</b>.</p>
+                <!-- EM emphasizes text (usually italic), B makes text bold -->
+                
+                <p>This is <i>italic text</i> and this is <u>underlined text</u>.</p>
+                <!-- I makes text italic, U underlines text -->
+                
+                <p>You can <mark class="highlight">highlight text</mark> and show <del>deleted text</del> with <ins>inserted text</ins>.</p>
+                <!-- MARK highlights text, DEL shows deleted text, INS shows inserted text -->
+                
+                <p>For code: <code>console.log('Hello World');</code></p>
+                <!-- CODE displays code snippets inline -->
+                
+                <pre>
+                    <!-- PRE preserves whitespace and line breaks -->
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+                </pre>
+                
+                <blockquote>
+                    <!-- BLOCKQUOTE for longer quotes -->
+                    <p>"The best way to learn HTML is by practicing and experimenting."</p>
+                    <cite>- Web Developer Wisdom</cite>
+                    <!-- CITE for citation sources -->
+                </blockquote>
+                
+                <p>Chemical formula: H<sub>2</sub>O (subscript)</p>
+                <!-- SUB creates subscript text -->
+                
+                <p>Mathematical expression: E = mc<sup>2</sup> (superscript)</p>
+                <!-- SUP creates superscript text -->
+                
+                <p>Use <kbd>Ctrl+C</kbd> to copy (keyboard input)</p>
+                <!-- KBD represents keyboard input -->
+                
+                <p>The <var>x</var> variable represents the unknown value</p>
+                <!-- VAR represents variables -->
+                
+                <p>Server output: <samp>File not found</samp></p>
+                <!-- SAMP represents sample output -->
+            </section>
+
+            <section id="lists">
+                <h2>List Types</h2>
+                
+                <h3>Unordered List (Bulleted)</h3>
+                <ul>
+                    <li>First item</li>
+                    <li>Second item
+                        <ul>
+                            <!-- Nested lists -->
+                            <li>Nested item 1</li>
+                            <li>Nested item 2</li>
+                        </ul>
+                    </li>
+                    <li>Third item</li>
+                </ul>
+                
+                <h3>Ordered List (Numbered)</h3>
+                <ol>
+                    <!-- OL creates ordered (numbered) lists -->
+                    <li>First step</li>
+                    <li>Second step</li>
+                    <li>Third step</li>
+                </ol>
+                
+                <h3>Definition List</h3>
+                <dl>
+                    <!-- DL creates definition lists -->
+                    <dt>HTML</dt>
+                    <!-- DT is definition term -->
+                    <dd>HyperText Markup Language</dd>
+                    <!-- DD is definition description -->
+                    <dt>CSS</dt>
+                    <dd>Cascading Style Sheets</dd>
+                </dl>
+            </section>
+
+            <section id="links-images">
+                <h2>Links and Images</h2>
+                
+                <h3>Different Types of Links</h3>
+                <p><a href="https://www.example.com" target="_blank">External link (opens in new tab)</a></p>
+                <!-- A with href creates links, target="_blank" opens in new tab -->
+                
+                <p><a href="#top">Internal link to top of page</a></p>
+                <!-- Links to elements with matching id -->
+                
+                <p><a href="mailto:someone@example.com">Email link</a></p>
+                <!-- Creates email links -->
+                
+                <p><a href="tel:+1234567890">Phone link</a></p>
+                <!-- Creates phone links -->
+                
+                <h3>Images</h3>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIFBsYWNlaG9sZGVyPC90ZXh0Pgo8L3N2Zz4=" alt="Sample image placeholder" width="200" height="100">
+                <!-- IMG displays images, alt is required for accessibility -->
+                
+                <figure>
+                    <!-- FIGURE groups media content with caption -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+CiAgPHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzY2NiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkNoYXJ0PC90ZXh0Pgo8L3N2Zz4=" alt="Chart showing data" width="150" height="100">
+                    <figcaption>
+                        <!-- FIGCAPTION provides caption for figure -->
+                        Figure 1: Sample chart with data visualization
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="tables">
+                <h2>Tables</h2>
+                
+                <table>
+                    <!-- TABLE creates data tables -->
+                    <caption>Monthly Sales Report</caption>
+                    <!-- CAPTION provides table title -->
+                    
+                    <thead>
+                        <!-- THEAD groups header content -->
+                        <tr>
+                            <!-- TR creates table rows -->
+                            <th>Month</th>
+                            <!-- TH creates header cells -->
+                            <th>Sales</th>
+                            <th>Growth</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <!-- TBODY groups body content -->
+                        <tr>
+                            <td>January</td>
+                            <!-- TD creates data cells -->
+                            <td>$50,000</td>
+                            <td>+5%</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                            <td>$55,000</td>
+                            <td>+10%</td>
+                        </tr>
+                        <tr>
+                            <td>March</td>
+                            <td colspan="2">Data not available</td>
+                            <!-- colspan makes cell span multiple columns -->
+                        </tr>
+                    </tbody>
+                    
+                    <tfoot>
+                        <!-- TFOOT groups footer content -->
+                        <tr>
+                            <th>Total</th>
+                            <th>$105,000</th>
+                            <th>+7.5%</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+
+            <section id="forms">
+                <h2>Form Elements</h2>
+                
+                <form action="#" method="post">
+                    <!-- FORM creates interactive forms -->
+                    
+                    <fieldset>
+                        <!-- FIELDSET groups related form elements -->
+                        <legend>Personal Information</legend>
+                        <!-- LEGEND provides title for fieldset -->
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <!-- LABEL provides accessible labels for inputs -->
+                            <input type="text" id="name" name="name" required>
+                            <!-- INPUT creates various input types -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="age">Age:</label>
+                            <input type="number" id="age" name="age" min="1" max="120">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthdate">Birth Date:</label>
+                            <input type="date" id="birthdate" name="birthdate">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Preferences</legend>
+                        
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <select id="country" name="country">
+                                <!-- SELECT creates dropdown menus -->
+                                <option value="">Choose a country</option>
+                                <!-- OPTION creates dropdown options -->
+                                <option value="us">United States</option>
+                                <option value="ca">Canada</option>
+                                <option value="uk">United Kingdom</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Favorite Colors:</label><br>
+                            <input type="checkbox" id="red" name="colors" value="red">
+                            <label for="red">Red</label><br>
+                            <input type="checkbox" id="blue" name="colors" value="blue">
+                            <label for="blue">Blue</label><br>
+                            <input type="checkbox" id="green" name="colors" value="green">
+                            <label for="green">Green</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Gender:</label><br>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="bio">Biography:</label><br>
+                            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea>
+                            <!-- TEXTAREA creates multi-line text input -->
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="resume">Upload Resume:</label>
+                            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="website">Website:</label>
+                            <input type="url" id="website" name="website" placeholder="https://example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="volume">Volume:</label>
+                            <input type="range" id="volume" name="volume" min="0" max="100" value="50">
+                        </div>
+                    </fieldset>
+                    
+                    <div class="form-group">
+                        <button type="submit">Submit Form</button>
+                        <!-- BUTTON creates clickable buttons -->
+                        <button type="reset">Reset Form</button>
+                        <input type="button" value="Custom Button">
+                    </div>
+                </form>
+            </section>
+
+            <section id="semantic">
+                <h2>Semantic HTML5 Elements</h2>
+                
+                <article>
+                    <!-- ARTICLE represents standalone content -->
+                    <header>
+                        <h3>Understanding Semantic HTML</h3>
+                        <p>Published on <time datetime="2024-01-15">January 15, 2024</time></p>
+                        <!-- TIME represents dates and times -->
+                    </header>
+                    
+                    <p>Semantic HTML elements provide meaning to web content, making it more accessible and SEO-friendly.</p>
+                    
+                    <aside>
+                        <!-- ASIDE represents content tangentially related to main content -->
+                        <h4>Quick Tip</h4>
+                        <p>Always use semantic elements when their meaning matches your content structure.</p>
+                    </aside>
+                    
+                    <footer>
+                        <!-- FOOTER represents footer information -->
+                        <p>Tags: <span>HTML</span>, <span>Semantic</span>, <span>Web Development</span></p>
+                        <!-- SPAN is inline container with no semantic meaning -->
+                    </footer>
+                </article>
+                
+                <details>
+                    <!-- DETAILS creates collapsible content -->
+                    <summary>Click to expand more information</summary>
+                    <!-- SUMMARY provides visible heading for details -->
+                    <p>This content is hidden by default and can be toggled by clicking the summary.</p>
+                    <p>It's great for FAQ sections, additional information, or content that might clutter the main view.</p>
+                </details>
+                
+                <h3>Progress and Meter Elements</h3>
+                <p>Download progress: <progress value="99" max="100">99%%</progress></p>
+                <!-- PROGRESS shows completion progress -->
+                
+                <p>Disk usage: <meter value="6" min="0" max="10">6 out of 10</meter></p>
+                <!-- METER shows scalar measurement within known range -->
+                <p></p>
+                
+                <h3>Interactive Elements</h3>
+                <p>Hover over this text: <abbr title="HyperText Markup Language">HTML</abbr></p>
+                <!-- ABBR provides abbreviation with full form in title -->
+                
+                <p>Address information:</p>
+                <address>
+                    <!-- ADDRESS represents contact information -->
+                    John Doe<br>
+                    123 Web Street<br>
+                    Internet City, IC 12345<br>
+                    <a href="mailto:john@example.com">john@example.com</a>
+                </address>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Footer for the entire page -->
+            <hr>
+            <!-- HR creates horizontal rule (line) -->
+            <p>&copy; 2024 HTML Tutorial. This tutorial demonstrates all major HTML tags with detailed comments.</p>
+            <!-- &copy; is HTML entity for copyright symbol -->
+            
+            <p>Other useful entities: &lt; &gt; &amp; &quot; &apos; &nbsp;</p>
+            <!-- HTML entities for special characters -->
+        </footer>
+    </div>
+
+    <!-- JavaScript can be included here -->
+    <script>
+        // JavaScript code goes here
+        console.log('HTML tutorial loaded successfully!');
+        
+        // Example of accessing HTML elements
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM is fully loaded');
+        });
+    </script>
+    
+    <!-- External JavaScript file can be linked like this: -->
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
